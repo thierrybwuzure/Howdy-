@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 :root {
@@ -16,6 +15,11 @@ html {
   scroll-behavior: smooth;
 }
 
+#hr {
+  border: 0.5px solid #343434;
+  margin: 50px auto;
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -24,6 +28,7 @@ body {
   font-family: Roboto;
   font-weight: 400;
   background: rgb(35, 35, 35);
+  overflow-x: hidden;
 }
 
 /* Header */
@@ -48,6 +53,7 @@ header {
   width: 5vw;
   border-radius: 5%;
   border-radius: 50%;
+  margin-top: 5px;
   cursor: pointer;
 }
 
@@ -177,7 +183,7 @@ a {
 }
 
 .project-header {
-  font-family: "Roboto";
+  font-family: "Roboto Condensed";
   font-size: 2.5rem;
   font-weight: 300;
   text-align: center;
@@ -192,6 +198,7 @@ a {
   grid-template-rows: 1fr 1fr;
   gap: 50px;
   align-items: center;
+  margin-top: -50px;
   margin-bottom: 150px;
 }
 
@@ -205,15 +212,16 @@ a {
 }
 
 #image {
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 .project-title {
-  font-family: "Poppins";
+  font-family: "Roboto Condensed";
   font-size: 1.7em;
   font-weight: 200;
   letter-spacing: 2px;
   text-align: center;
+  margin-top: 12px;
   margin-left: 150px;
 }
 
@@ -222,6 +230,8 @@ a {
   font-family: "Poppins";
   font-size: x-large;
   font-weight: 100;
+  text-align: justify;
+  margin-top: -40px;
 }
 
 /* Contact */
@@ -244,14 +254,14 @@ a {
   letter-spacing: 2px;
   text-align: center;
   text-shadow: 3px 1px 5px black;
-  margin: 0 auto;
+  margin: -20px auto;
 }
 
 /* Application Form */
 
 form {
   max-width: 35vw;
-  padding: 50px;
+  padding: 25px;
   color: #343434;
   background: linear-gradient(-180deg, #287ab8, #11466e);
   border-radius: 5px;
@@ -282,7 +292,7 @@ textarea {
 }
 
 input[type="submit"] {
-  background-color: #414141;
+  background-color: #272727;
   color: white;
   padding: 12px 20px;
   font-family: "Roboto";
@@ -290,19 +300,13 @@ input[type="submit"] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  text-align: center;
+  margin-left: 14rem;
 }
 
 input[type="submit"]:hover {
-  background-color: #272727;
+  background-color: rgb(25, 25, 25);
   font-family: "Roboto";
   transition-duration: 0.3s;
-}
-
-footer {
-  width: 100vw;
-  height: 25vh;
-  text-align: center;
 }
 
 /* Author Quote */
@@ -315,14 +319,41 @@ footer {
   padding: 50px;
   margin: 0 auto;
   text-align: center;
-  background: linear-gradient(#287ab8, #11466e);
+  /* background: linear-gradient(#287ab8, #11466e); */
+}
+
+.quote img {
+  width: 100vw;
+  text-align: center;
+  margin-top: -50px;
+  margin-left: -50px;
 }
 
 .quote p {
   font-weight: 100;
   font-style: italic;
   font-size: 2rem;
-  margin-top: 20px;
 }
 
+/* To DO 
+
+- @media queries
+- social links : icons
+
+*/
+
 /* Footer */
+
+footer {
+  width: 100vw;
+  height: 25vh;
+  text-align: center;
+}
+
+footer li {
+  cursor: pointer;
+}
+
+footer p {
+  font-weight: 100;
+}

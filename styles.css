@@ -70,7 +70,7 @@ nav {
   flex-direction: column;
   position: absolute;
   right: 50px;
-  font-family: "Poppins";
+  font-family: 'Poppins';
 }
 
 ul {
@@ -107,7 +107,7 @@ a {
   justify-content: center;
   align-items: center;
   /** background-color: var(--midnight); **/
-  background: linear-gradient(#287ab8, #11466e);
+  background: linear-gradient(120deg, white, #287ab8, #11466e);
   width: 100vw;
   height: 100vh;
   margin: 0;
@@ -115,7 +115,7 @@ a {
 }
 
 .welcome-section h1 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: italic;
   font-size: 3.5rem;
   font-weight: 500;
@@ -124,7 +124,7 @@ a {
 }
 
 .welcome-section h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: italic;
   font-size: 2.4rem;
   font-weight: 200;
@@ -137,7 +137,7 @@ a {
 /* About Me */
 
 .welcome-section p {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-size: 1.4rem;
   font-weight: 100;
   text-align: justify;
@@ -169,11 +169,13 @@ a {
 
 .about p {
   width: 85vw;
-  font-family: "Roboto";
+  height: 25vh;
+  font-family: 'Roboto';
   font-size: 1.5rem;
   font-weight: 300;
   text-align: justify;
   padding: 5%;
+  background-color: antiquewhite;
 }
 
 /* Projects */
@@ -183,9 +185,9 @@ a {
 }
 
 .project-header {
-  font-family: "Roboto Condensed";
-  font-size: 2.5rem;
-  font-weight: 300;
+  font-family: 'Poppins';
+  font-size: 2rem;
+  font-weight: 100;
   text-align: center;
   padding: 120px;
   color: var(--gold);
@@ -216,10 +218,10 @@ a {
 }
 
 .project-title {
-  font-family: "Roboto Condensed";
+  font-family: 'Poppins';
   font-size: 1.7em;
   font-weight: 200;
-  letter-spacing: 2px;
+  letter-spacing: -0.5px;
   text-align: center;
   margin-top: 12px;
   margin-left: 150px;
@@ -227,7 +229,7 @@ a {
 
 .project-description {
   width: 30vw;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-size: x-large;
   font-weight: 100;
   text-align: justify;
@@ -248,7 +250,7 @@ a {
 .contact-me {
   width: 100vw;
   height: 15vh;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 2.5rem;
   font-weight: 400;
   letter-spacing: 2px;
@@ -270,13 +272,13 @@ form {
 
 label {
   margin-left: 10px;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-size: large;
   font-weight: 500;
   color: #fffaf0;
 }
 
-input[type="text"],
+input[type='text'],
 select,
 textarea {
   width: 100%;
@@ -284,18 +286,18 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-size: large;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
 }
 
-input[type="submit"] {
+input[type='submit'] {
   background-color: #272727;
   color: white;
   padding: 12px 20px;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-size: 1rem;
   border: none;
   border-radius: 4px;
@@ -303,16 +305,16 @@ input[type="submit"] {
   margin-left: 14rem;
 }
 
-input[type="submit"]:hover {
+input[type='submit']:hover {
   background-color: rgb(25, 25, 25);
-  font-family: "Roboto";
+  font-family: 'Roboto';
   transition-duration: 0.3s;
 }
 
 /* Author Quote */
 
 .quote {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 2.5rem;
   font-style: italic;
   font-weight: 300;

@@ -1,72 +1,102 @@
 <!DOCTYPE html>
+<!--
+  Portfolio Website
+  Author: Thierry Bwuzure
+  Description: Personal portfolio showcasing web development projects and skills
+-->
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>My Portfolio</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="/images/profile_picture_thierry_bwuzure.JPEG"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- Header & Navbar -->
-    <div class="page-wrapper">
-      <header id="header">
-        <div class="logo">
-          <img id="header-logo" src="images/TB transparent 3.png" width="65" />
-        </div>
 
-        <nav id="navbar">
-          <ul>
-            <li><a class="navlink one" href="#welcome-section">Howdy!</a></li>
-            <li><a class="navlink" href="#about">About</a></li>
-            <li><a class="navlink" href="#projects">Project</a></li>
-            <li><a class="navlink" href="#message">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-    </div>
+<!--
+  Head Section
+  - Meta information
+  - Title
+  - Favicon
+  - Stylesheets
+  - Font imports
+-->
 
-    <!-- Welcome -->
+<head>
+  <meta charset="UTF-8" />
+  <title>My Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="/images/profile_picture_thierry_bwuzure.JPEG" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+</head>
 
-    <section id="welcome-section" class="welcome-section">
-      <h1>Howdy, I'm Thierry!</h1>
-      <h2>front-end developer</h2>
-    </section>
+<body>
+  <!--
+    Header Section
+    - Logo
+    - Navigation Menu
+    - Fixed positioning with gradient background
+  -->
+  <div class="page-wrapper">
+    <header id="header">
+      <!-- Logo -->
+      <div class="logo">
+        <img id="header-logo" src="images/TB transparent.png" alt="TB Logo" width="50" />
+      </div>
 
-    <!-- About -->
-    <section id="about" class="about">
-      <p>
-        <b>ABOUT ME</b><br /><br />Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Maiores recusandae alias repellat tempore minima
-        fugiat adipisci error deserunt? Sapiente aliquam pariatur impedit
-        delectus commodi magnam placeat modi ipsum tenetur culpa!
-      </p>
-      <img
-        src="images/profile_picture_thierry_bwuzure.JPEG"
-        alt="portrait"
-        class="portrait"
-      />
-    </section>
+      <!-- Navigation -->
+      <nav id="navbar">
+        <ul>
+          <li><a class="navlink one" href="#welcome-section">Howdy!</a></li>
+          <li><a class="navlink" href="#about-anchor">About</a></li>
+          <li><a class="navlink" href="#projects-anchor">Project</a></li>
+          <li><a class="navlink" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
 
-    <!-- Projects -->
+  <!--
+    Welcome Section
+    - Hero section with name and title
+    - Gradient background
+  -->
+  <section id="welcome-section" class="welcome-section fade-in">
+    <h1>Howdy, I'm Thierry!</h1>
+    <h2>front-end developer</h2>
+  </section>
 
-    <section id="projects" class="projects-section">
-      <h2 class="project-header">
-        Here are <i>some</i> of the
-        <span style="color: " class="projects-color"><i>projects</i> </span
-        >currently under<strong> development</strong>.
-      </h2>
-      <div class="grid-container">
-        <!-- <div class="project one">
+  <!-- About -->
+
+  <div id="about-anchor"></div>
+  <section class="about">
+    <img src="images/profile_picture_thierry_bwuzure.JPEG" alt="Thierry Bwuzure's portrait" class="portrait" />
+    <p>
+      <b class="about-heading">About me</b><br /><br />Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Maiores recusandae alias repellat tempore minima
+      fugiat adipisci error deserunt? Sapiente aliquam pariatur impedit
+      delectus commodi magnam placeat modi ipsum tenetur culpa! Lorem ipsum dolor, sit amet consectetur adipisicing
+      elit. Quo facilis, sed voluptas iusto perferendis fuga optio quisquam quam animi numquam repellendus nulla nobis
+      fugit, rerum aut. Alias laboriosam et tempore?<br><br>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aut quod quo, dignissimos eius enim eligendi. Nihil
+      consequatur accusantium ut soluta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio possimus amet
+      reiciendis magni sapiente maxime officiis, commodi quis delectus ad repudiandae.<br><br>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium odit ratione voluptas quam minima aut
+      pariatur delectus, consectetur, ad aperiam earum?
+    </p>
+
+  </section>
+
+  <!--
+    Projects Section
+    - Project showcase in grid layout
+    - Project cards with images and titles
+    - Hover effects and transitions
+  -->
+  <div id="projects-anchor"></div>
+  <section class="projects-section">
+    <h2 class="project-header"><strong>Here are the projects I'm currently working on!</strong></h2>
+
+    <!-- Project Grid Container -->
+    <div class="grid-container">
+      <!-- <div class="project one">
           <p class="project-title">Landing Page</p>
           <a href="https://test.thierrybwuzure.com/" alt="landing page"></a>
         </div>
@@ -77,97 +107,26 @@
           praesentium.
         </p> -->
 
-        <div class="project one">
-          <img id="image" src="images/organic_shop.png" alt="" width="600" />
-          <p class="project-title" alt="e-commerce website">
-            The Organic eShop
-          </p>
-        </div>
-        <p class="project-description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-          obcaecati enim ut nihil, quod excepturi cumque voluptas iste commodi
-          voluptates magni aliquam earum voluptatibus est iusto ea provident ad
-          praesentium.
-        </p>
-        <div class="project two">
-          <img id="image" src="images/macbooknature.avif" alt="" width="600" />
-          <p class="project-title" alt="wordpress website">
-            The Wordpress webSite
-          </p>
-        </div>
-        <p class="project-description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-          obcaecati enim ut nihil, quod excepturi cumque voluptas iste commodi
-          voluptates magni aliquam earum voluptatibus est iusto ea provident ad
-          praesentium.
-        </p>
-        <div class="project three">
-          <img id="image" src="images/music_website.png" alt="" width="600" />
-          <p class="project-title" alt="wordpress website">The Music webSite</p>
-        </div>
-        <p class="project-description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-          obcaecati enim ut nihil, quod excepturi cumque voluptas iste commodi
-          voluptates magni aliquam earum voluptatibus est iusto ea provident ad
-          praesentium.
-        </p>
+      <div class="project one">
+        <h3 class="project-title">Organic Shop</h3>
+        <img id="project-image-1" src="images/Homegrown Organics.png" alt="Organic Shop Project" />
       </div>
-    </section>
 
-    <!-- Contact -->
-
-    <section class="contact" id="message">
-      <p class="contact-me"></p>
-
-      <p class="contact-me" id="message">Get in touch <i></i><br /></p>
-      <div class="container">
-        <form action="action_page.php">
-          <label for="fname">First Name</label>
-          <input
-            type="text"
-            id="fname"
-            name="firstname"
-            placeholder="Your name"
-          />
-
-          <label for="lname">Last Name</label>
-          <input
-            type="text"
-            id="lname"
-            name="lastname"
-            placeholder="Your last name"
-          />
-
-          <label for="email">Email</label>
-          <input type="text" id="email" name="email" placeholder="Your email" />
-
-          <!-- Radio Menu
-
-          <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-          </select>
-
-          -->
-
-          <label for="subject">Subject</label>
-          <textarea
-            id="subject"
-            name="subject"
-            placeholder="Write something"
-            style="height: 200px"
-          ></textarea>
-
-          <input type="submit" value="Submit" />
-        </form>
+      <div class="project two">
+        <h3 class="project-title">Wordpress Blog</h3>
+        <img id="project-image-2" src="images/macbooknature.avif" alt="Nature Website Project" />
       </div>
-    </section>
 
-    <section class="quote">
-      <div>
-        <!-- <blockquote>
+      <div class="project three">
+        <h3 class="project-title">Music Website</h3>
+        <img id="project-image-3" src="images/music_website.png" alt="Music Website Project" />
+      </div>
+  </section>
+
+  <!-- Quote Section -->
+  <section class="quote">
+    <div>
+      <!-- <blockquote>
           <strong>“</strong>A computer has no capacity for attitude or motive;
           <br />So intelligence is not what you have, but what you do with
           it.<strong>”</strong>
@@ -175,26 +134,28 @@
           <p>— Victor Hafichuk</p>
         </blockquote> -->
 
-        <img src="images/computer vs intelligence.jpg" alt="" />
-      </div>
-    </section>
+      <img src="images/computer vs intelligence2.jpg" alt="" />
+    </div>
+  </section>
 
-    <footer>
-      <ul class="links" id="links">
-        <li class="social-media">
-          <a href="https://github.com/thierrybwuzure" target="_blank">Github</a>
-        </li>
-        <li class="social-media">
-          <a href="https://www.linkedin.com/in/thierrybwuzure/" target="_blank"
-            >LinkedIn</a
-          >
-        </li>
-        <li class="social-media">
-          <a href="#" target="_blank">Email</a>
-        </li>
-      </ul>
-      <hr class="hr" id="hr" />
-      <p>©2025 TovCode</p>
-    </footer>
-  </body>
+  <footer>
+    <!-- Social Media Links -->
+    <ul class="links" id="links">
+      <li class="social-media">
+        <a href="https://github.com/thierrybwuzure" target="_blank" rel="noopener noreferrer">Github</a>
+      </li>
+      <li class="social-media">
+        <a href="https://www.linkedin.com/in/thierrybwuzure/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </li>
+      <li class="social-media">
+        <a href="/contact.html">Contact</a>
+      </li>
+    </ul>
+    <!-- Visual Separator -->
+    <hr class="hr" id="hr" />
+    <!-- Copyright -->
+    <p>©2025 Thierry Bwuzure</p>
+  </footer>
+</body>
+
 </html>

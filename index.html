@@ -39,15 +39,17 @@
       <!-- Logo -->
       <div class="logo">
         <img id="header-logo" src="images/TB transparent.png" alt="TB Logo" width="50" />
+        <p>MyPortfolio
+        </p>
       </div>
 
       <!-- Navigation -->
       <nav id="navbar">
         <ul>
-          <li><a class="navlink one" href="#welcome-section">Howdy!</a></li>
           <li><a class="navlink" href="#about-anchor">About</a></li>
           <li><a class="navlink" href="#projects-anchor">Project</a></li>
           <li><a class="navlink" href="contact.html">Contact</a></li>
+          <li><a class="navlink one" href="#welcome-section">Howdy</a></li>
         </ul>
       </nav>
     </header>
@@ -59,28 +61,45 @@
     - Gradient background
   -->
   <section id="welcome-section" class="welcome-section fade-in">
-    <h1>Howdy, I'm Thierry!</h1>
-    <h2>front-end developer</h2>
+    <img src="images/profile_picture_thierry_bwuzure.JPEG" alt="Thierry Bwuzure's portrait" class="portrait" />
+    <h1>Hey, I'm Thierry</h1>
+    <!-- <h2>front-end developer</h2> -->
   </section>
 
   <!-- About -->
 
   <div id="about-anchor"></div>
   <section class="about">
-    <img src="images/profile_picture_thierry_bwuzure.JPEG" alt="Thierry Bwuzure's portrait" class="portrait" />
-    <p>
-      <b class="about-heading">About me</b><br /><br />Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Maiores recusandae alias repellat tempore minima
-      fugiat adipisci error deserunt? Sapiente aliquam pariatur impedit
-      delectus commodi magnam placeat modi ipsum tenetur culpa! Lorem ipsum dolor, sit amet consectetur adipisicing
-      elit. Quo facilis, sed voluptas iusto perferendis fuga optio quisquam quam animi numquam repellendus nulla nobis
-      fugit, rerum aut. Alias laboriosam et tempore?<br><br>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aut quod quo, dignissimos eius enim eligendi. Nihil
-      consequatur accusantium ut soluta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio possimus amet
-      reiciendis magni sapiente maxime officiis, commodi quis delectus ad repudiandae.<br><br>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium odit ratione voluptas quam minima aut
-      pariatur delectus, consectetur, ad aperiam earum?
-    </p>
+    <div class="about-container">
+      <p>
+        <b class="about-heading">About me</b><br /><br />
+        I discovered the joy of coding just last year, and it completely changed my perspective on what I wanted to do
+        with my
+        life. What started as curiosity quickly became a passion as I began teaching myself the fundamentals of web
+        development. <br><br>
+        Those early days of self-learning were challenging but incredibly rewarding—every small victory, from my first
+        working
+        function to building my first responsive page, fueled my determination to keep going. Now I'm taking my skills
+        to
+        the
+        next level by enrolling in a comprehensive training course to become a full-stack developer, combining my
+        self-taught
+        foundation with structured, professional education. <br><br>
+        My goal isn't just to build websites—it's to create meaningful digital solutions for a cause I deeply care
+        about.
+        I want
+        to specialize in developing e-commerce platforms specifically for organic farms and sustainable food producers.
+        I
+        believe that organic farming is essential for our health and our planet, and I want to help these businesses
+        thrive
+        online while educating customers about the real benefits of choosing organic. It's about connecting people who
+        grow food
+        with care to people who want to eat with intention. <br><br>
+        For me, coding is more than just a career path—it's a way to merge technology with purpose. I'm excited to build
+        a
+        future where my work helps make organic, sustainable food more accessible to everyone.
+      </p>
+    </div>
 
   </section>
 
@@ -92,7 +111,7 @@
   -->
   <div id="projects-anchor"></div>
   <section class="projects-section">
-    <h2 class="project-header"><strong>Here are the projects I'm currently working on!</strong></h2>
+    <h2 class="project-header"><strong>My Projects</strong></h2>
 
     <!-- Project Grid Container -->
     <div class="grid-container">
@@ -108,35 +127,37 @@
         </p> -->
 
       <div class="project one">
-        <h3 class="project-title">Organic Shop</h3>
-        <img id="project-image-1" src="images/Homegrown Organics.png" alt="Organic Shop Project" />
+        <h3 class="project-title">Organic eShop (Landing Page)</h3>
+        <a href="https://thierrybwuzure.github.io/Organic-Food-Landing-Page/" target="_blank">
+          <img id="project-image-1" src="images/Homegrown Organics.png" alt="Organic Shop Project" />
+        </a>
       </div>
-
+      <!-- 
       <div class="project two">
-        <h3 class="project-title">Wordpress Blog</h3>
+        <h3 class="project-title">Blog (WordPress)</h3>
         <img id="project-image-2" src="images/macbooknature.avif" alt="Nature Website Project" />
       </div>
 
       <div class="project three">
-        <h3 class="project-title">Music Website</h3>
+        <h3 class="project-title">Music WebApp</h3>
         <img id="project-image-3" src="images/music_website.png" alt="Music Website Project" />
-      </div>
+      </div> -->
   </section>
 
   <!-- Quote Section -->
-  <section class="quote">
+  <!-- <section class="quote">
     <div>
-      <!-- <blockquote>
-          <strong>“</strong>A computer has no capacity for attitude or motive;
-          <br />So intelligence is not what you have, but what you do with
-          it.<strong>”</strong>
-
-          <p>— Victor Hafichuk</p>
-        </blockquote> -->
+      <blockquote>
+        <strong>“</strong>A computer has no capacity for attitude or motive;
+        <br />So intelligence is not what you have, but what you do with
+        it.<strong>”</strong>
+        <p>Victor Hafichuk</p>
+      </blockquote>
 
       <img src="images/computer vs intelligence2.jpg" alt="" />
     </div>
-  </section>
+  </section> -->
+  <!-- Visual Separator -->
 
   <footer>
     <!-- Social Media Links -->
@@ -150,11 +171,10 @@
       <li class="social-media">
         <a href="/contact.html">Contact</a>
       </li>
+      <li class="social-media">
+      </li>
     </ul>
-    <!-- Visual Separator -->
-    <hr class="hr" id="hr" />
-    <!-- Copyright -->
-    <p>©2025 Thierry Bwuzure</p>
+    <p>©2026 Thierry Bwuzure</p>
   </footer>
 </body>
 

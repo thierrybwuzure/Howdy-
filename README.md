@@ -2,6 +2,8 @@
 
 A modern, responsive portfolio website showcasing web development projects and skills. Built with vanilla HTML, CSS, and designed with a focus on user experience and clean aesthetics.
 
+Link: https://thierrybwuzure.github.io/Howdy-/
+
 ## Features
 
 - **Modern UI/UX**: Clean, professional design with smooth animations
